@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', 'Verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav */
+
+.nav-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav {
+    padding: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.nav-links li {
+    font-size: 20px;
+    /* flex: 1; */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* @media (max-width: 600px) {
+    .nav-links {
+        gap: 10px;
+    }
+} */
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.hero-links {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* @media (max-width: 600px) {
+    p {
+        width: 400px;
+    }
+} */
