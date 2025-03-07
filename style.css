@@ -12,7 +12,7 @@ body {
 
 /* Nav */
 
-.nav-hero {
+.nav-hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero2.png);
     background-size: cover;
     background-position: 50% 50%;
@@ -60,14 +60,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 70%;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     flex-wrap: wrap;
     padding: 0 20px;
 }
 
 h1 {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 48px;
     color: white;
     text-align: center;
@@ -75,14 +75,14 @@ h1 {
 
 p {
     max-width: 700px;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     font-size: 18px;
     color: white;
 }
 
 .hero-links {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     gap: 20px;
 }
@@ -100,3 +100,286 @@ p {
         width: 400px;
     }
 } */
+
+/* Services */
+
+.services, .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #251B28;
+    padding: 30px 20px 60px;
+}
+
+.services-header, .listings-header, .sold-header, .reviews-header, .contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px 0 30px;
+}
+
+h3 {
+    color: white;
+}
+
+h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.services-cards {
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    max-width: 900px;
+    
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    
+}
+
+.services-card img {
+    width:35px;
+
+}
+
+@media (max-width: 600px) {
+    .services-cards, .reviews-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Listings */
+.listings, .sold {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center;*/
+    /* justify-content: center; */
+    padding: 30px 20px 60px;
+}
+
+.listings-header h3, .listings-header h2, .listings p, .sold-header h3, .sold-header h2, .sold-header p {
+    color: black;
+}
+
+
+.listings-cards, .sold-cards {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    /* flex: 1; */
+}
+
+.listing-card, .sold-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 2px solid #01332B;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+}
+
+.listing-card li, .sold-card li {
+    list-style-type: none;
+}
+
+.listing-card img, .sold-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+} 
+
+.listing-card-content, .sold-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listing-card-fs, .sold-card-fs, .form button {
+    padding: 5px 8px;;
+    border: 2px solid transparent;
+    background-color: #8ABFB2;
+    width: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.listing-card-features, .sold-card-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-position {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    min-width: 200px;
+}
+
+.sold-card-fs {
+    padding: 5px 8px;;
+    border: 2px solid transparent;
+    background-color: #C4C4DB;
+    width: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 760px) {
+    .listings-cards, .sold-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listing-card, .sold-card {
+        width: 100%;
+    }
+    
+    .listing-card img, .sold-card img {
+        object-fit: cover;
+    }
+}
+
+/* Home Appraisal */
+
+.home-appraisal {
+    background-color: #251B28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px 60px;
+}
+
+.home-appraisal-header, .reviews-h2-color {
+    color: #84BFB2;
+}
+
+/* Reviews */
+
+.reviews-container {
+    display: flex;
+    color: white;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.reviews-container-left, .reviews-container-right {
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review-text, .review-author {
+    font-style: italic;
+    padding: 5px;
+}
+
+.review-author {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* Contact */
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/contact-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 8px;
+    
+}
+
+input, select {
+    height: 30px;
+}
+
+select {
+    width: 182px;
+}
+
+.form button {
+    margin: 20px;
+}
+
+/* Dropdown Placeholder */
+select:required:invalid {
+    color: gray;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: black;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01332B;
+    color: white;
+    padding: 30px;
+    gap: 20px;
+}
