@@ -383,8 +383,8 @@
       </div>
 
       <div class="form">
-        <form action="google.com" id="contactform">
-          <div class="form-row">
+        <form id="contactform">
+          <div class="form-row one">
             <label for="name"></label>
             <input
               type="text"
@@ -406,7 +406,7 @@
           </div>
           <br />
           <br />
-          <div class="form-row">
+          <div class="form-row two">
             <label for="phone"></label>
             <input
               type="tel"
@@ -427,20 +427,23 @@
           </div>
           <br />
           <br />
-          <div class="form-row">
+          <div class="form-row three">
             <textarea
               name="message"
               id="message"
               rows="7"
-              cols="44"
               placeholder="Type your message.."
               required
               autocomplete
             ></textarea>
           </div>
-        </form>
 
-        <button type="submit" form="contactform" value="Submit">Submit</button>
+          <div class="button-container">
+            <button type="submit" formaction="http://google.com" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 

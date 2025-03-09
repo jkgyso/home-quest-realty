@@ -46,11 +46,6 @@ body {
     color: white;
 }
 
-/* @media (max-width: 600px) {
-    .nav-links {
-        gap: 10px;
-    }
-} */
 
 /* Hero */
 
@@ -95,11 +90,6 @@ p {
     border-radius: 8px;
 }
 
-/* @media (max-width: 600px) {
-    p {
-        width: 400px;
-    }
-} */
 
 /* Services */
 
@@ -169,7 +159,7 @@ h2 {
     }
 }
 
-/* Listings */
+
 .listings, .sold {
     display: flex;
     flex-direction: column;
@@ -190,7 +180,6 @@ h2 {
     align-content: center;
     gap: 20px;
     padding: 0 20px;
-    /* flex: 1; */
 }
 
 .listing-card, .sold-card {
@@ -336,6 +325,10 @@ h2 {
     padding: 30px 20px 60px;
 }
 
+.contact-header {
+    text-align: center;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -344,20 +337,48 @@ h2 {
     border: 2px solid white;
     padding: 30px;
     border-radius: 8px;
-    
+
 }
+
+form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-row #name, .form-row #tel {
+    margin-right: 8px;
+}
+
+input {
+    padding: 3px;
+}
+
 
 input, select {
     height: 30px;
 }
 
-select {
-    width: 182px;
+textarea {
+    padding: 8px;
+    width: 100%;
 }
 
-.form button {
-    margin: 20px;
+select {
+    width: 100%;
 }
+
+.button-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* Dropdown Placeholder */
 select:required:invalid {
